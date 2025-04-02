@@ -1,4 +1,3 @@
-// Configuración de la gráfica
 document.addEventListener('DOMContentLoaded', function() {
     const experiencia = {
         labels: ['HTML', 'CSS', 'JavaScript', 'PHP', 'GIT', 'PYTHON', 'JAVA', 'C'],

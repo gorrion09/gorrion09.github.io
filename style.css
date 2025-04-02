@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #222;
+    background: linear-gradient(270deg, #04132e, #2a5298);
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -54,7 +54,6 @@ nav ul li a {
     max-width: 800px;
 }
 
-/* Sobre mi section */
 #sobre-mi {
     display: flex;
     flex-direction: column;
@@ -92,4 +91,46 @@ nav ul li a {
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
+}
+
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#estudios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    ul{
+        list-style: none;
+    }
+}
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover{
+        color: #04132e;
+        transition: smooth;
+    }
 }

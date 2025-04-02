@@ -1,10 +1,9 @@
-// Configuración de la gráfica
 document.addEventListener('DOMContentLoaded', function() {
     const experiencia = {
         labels: ['ASTRO', 'BOOSTRAP', 'REACT',],
         datasets: [{
             label: 'Nivel de dominio (0-100)',
-            data: [90, 85, 70, 80, 60],
+            data: [90, 85, 20],
             backgroundColor: [
                 '#E44D26',
                 '#2965F1',
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         type: 'bar',
         data: experiencia,
         options: {
-            indexAxis: 'y', 
+            indexAxis: 'y',
             responsive: true,
             scales: {
                 x: {
@@ -31,7 +30,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     max: 100,
                     ticks: {
                         callback: function(value) {
-                            return value + '%';
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                y: { 
+                    ticks: {
+                        color: '#ffffff', 
+                        font: {
+                            size: 14, 
+                            weight: 'bold'
                         }
                     }
                 }
@@ -41,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return context.raw + '%';
+                            return context.parsed.x + '%';
                         }
                     }
                 }
