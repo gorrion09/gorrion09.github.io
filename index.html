@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Rubén Balaguer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -14,31 +15,49 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="sobre-mi" class="section">
         <div class="floating-card">
-            <img src="/public/img/yo.png" alt="foto-yo">
-            <h2>Sobre mí</h2>
-            <p>Me llamo Rubén y ahora mismo estudio en el instituto CIPFP Batoi.</p>
+            <div class="profile-content">
+                <img src="/public/img/yo.png" alt="foto-yo" class="profile-img">
+                <div class="profile-text">
+                    <h2>Rubén Balaguer Picó | Desarrollador Web</h2>
+                    <ul>
+                        <li><p>Me llamo Rubén y ahora mismo estudio en el instituto CIPFP Batoi.</p></li>
+                        <li><p>Aquí puedes añadir más información sobre ti.</p></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="experiencia" class="section">
         <div class="floating-card">
             <h2>Experiencia</h2>
-            <p>He hecho prácticas en un instituto de mi ciudad (Marzo-Junio 2024).</p>
+            <p>He hecho prácticas en el Colegio José Arnauda (Marzo-Junio 2024).</p>
         </div>
     </section>
 
     <section id="habilidades" class="section">
         <div class="floating-card">
             <h2>Habilidades</h2>
-            <p>Mis habilidades principales incluyen desarrollo web y bases de datos.</p>
+            <p>Actualmente mis habilidades como programador web son estas:</p>
+            <h3 class="TITULOS">LENGUAJES DE PROGRAMACION:</h3>    
+            <div class="chart-container">
+                    <canvas id="lenguajesChart"></canvas>
+                    <script src="grafica-lenguajes.js"></script>
+                </div>
+            <h3 class="TITULOS">FRAMEWORKS:</h3>    
+            <div class="chart-container">
+                    <canvas id="frameworkChart"></canvas>
+                    <script src="grafica-frameworks.js"></script>
+                </div>
         </div>
+        
+
     </section>
 
     <section id="proyectos" class="section">
@@ -48,11 +67,15 @@
         </div>
     </section>
 
-    <section id="contacto" class="section">
-        <div class="floating-card">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mi correo electrónico o LinkedIn.</p>
-        </div>
+
+    <section id="redes-sociales" class="section" style="background-color: rgba(0, 0, 0, 0.7); color: white; padding: 20px; text-align: center;">
+        <h2>Rubén Balaguer</h2>
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="https://www.linkedin.com/in/rubenbalaguer" target="_blank" style="color: #1DA1F2; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+        <a href="https://github.com/rubenbalaguer" target="_blank" style="color: #f8f9fa; text-decoration: none; margin: 0 10px;">GitHub</a>
+        <a href="https://twitter.com/rubenbalaguer" target="_blank" style="color: #1DA1F2; text-decoration: none; margin: 0 10px;">Twitter</a>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
