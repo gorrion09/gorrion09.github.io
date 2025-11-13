@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubén Balaguer | Desarrollador Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">RB.</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#experiencia">Trayectoria</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+            <a href="https://www.linkedin.com/in/ruben-balaguer-pico" target="_blank" class="btn-contact">Contactar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content fade-in">
+                <span class="badge">Desarrollador Junior</span>
+                <h1>Rubén Balaguer Picó</h1>
+                <p class="hero-text">
+                   Estudiante de desarrollo web, con ganas de crear soluciones digitales modernas
+                   y funcionales.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+                    <a href="https://github.com/gorrion09" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-delay">
+                <div class="img-wrapper">
+                    <img src="public/img/106767558.png" alt="Rubén Balaguer">
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2 class="section-title">Arsenal Tecnológico</h2>
+            <div class="grid-2">
+                <div class="glass-card">
+                    <h3><i class="fas fa-code"></i> Lenguajes</h3>
+                    <div class="chart-container">
+                        <canvas id="lenguajesChart"></canvas>
+                    </div>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="chart-container">
+                        <canvas id="frameworkChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="container">
+            <h2 class="section-title">Trayectoria</h2>
+            <div class="grid-2">
+                <div class="glass-card">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="timeline-item">
+                        <span class="date">Mar 2024 - Jun 2024</span>
+                        <h4>Técnico de Sistemas</h4>
+                        <p class="place">Colegio José Arnauda</p>
+                        <p class="desc">Mantenimiento de equipos, redes y soporte técnico a usuarios.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Formación</h3>
+                    <div class="timeline-item">
+                        <span class="date">2022 - 2024</span>
+                        <h4>Técnico Medio de Sistemas</h4>
+                        <p class="place">CIPFP BATOI</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">Certificación</span>
+                        <h4>Introducción al Desarrollo Web</h4>
+                        <p class="place">Google Actívate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="glass-card center-text">
+                <p>Constantemente construyendo cosas nuevas. Explora mi código fuente y contribuciones.</p>
+                <br>
+                <a href="https://github.com/gorrion09" target="_blank" class="btn primary large">
+                    <i class="fab fa-github"></i> Explorar GitHub de Rubén
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rubén Balaguer. Creado con pasión y código.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ruben-balaguer-pico" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gorrion09" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
