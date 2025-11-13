@@ -1,9 +1,7 @@
-/* --- CONFIGURACIÓN Y VARIABLES --- */
 :root {
     --bg-dark: #0f172a;
     --primary: #6366f1; /* Indigo */
     --secondary: #ec4899; /* Pink */
-    --accent: #06b6d4; /* Cyan */
     --glass-bg: rgba(30, 41, 59, 0.7);
     --glass-border: rgba(255, 255, 255, 0.08);
     --text-white: #f8fafc;
@@ -24,8 +22,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
-/* --- FONDO AMBIENTAL --- */
 .background-glow {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100vh;
@@ -35,7 +31,6 @@ body {
         radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%);
 }
 
-/* --- HEADER --- */
 header {
     position: fixed;
     top: 0;
@@ -77,9 +72,7 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--text-white);
-}
+.nav-links a:hover { color: var(--text-white); }
 
 /* --- HERO SECTION --- */
 .hero-section {
@@ -91,9 +84,7 @@ header {
     gap: 2rem;
 }
 
-.hero-content {
-    max-width: 600px;
-}
+.hero-content { max-width: 600px; }
 
 .badge {
     background: rgba(99, 102, 241, 0.1);
@@ -124,8 +115,8 @@ h1 {
 }
 
 .hero-image .img-wrapper {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -133,11 +124,10 @@ h1 {
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
     transform: rotate(3deg);
     transition: 0.3s;
+    background: var(--glass-bg);
 }
 
-.hero-image .img-wrapper:hover {
-    transform: rotate(0deg) scale(1.02);
-}
+.hero-image .img-wrapper:hover { transform: rotate(0deg) scale(1.02); }
 
 .hero-image img {
     width: 100%;
@@ -145,11 +135,7 @@ h1 {
     object-fit: cover;
 }
 
-/* --- BOTONES --- */
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-}
+.hero-buttons { display: flex; gap: 1rem; }
 
 .btn {
     padding: 0.8rem 1.5rem;
@@ -179,9 +165,7 @@ h1 {
     color: white;
 }
 
-.btn.secondary:hover {
-    background: rgba(255,255,255,0.1);
-}
+.btn.secondary:hover { background: rgba(255,255,255,0.1); }
 
 .btn-contact {
     background: white;
@@ -195,19 +179,16 @@ h1 {
 }
 .btn-contact:hover { transform: scale(1.05); }
 
-/* --- LAYOUT GENERAL --- */
-.container {
-    padding: 5rem 10%;
-}
+.container { padding: 5rem 10%; }
 
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-white);
 }
 
 .grid-2 {
@@ -216,7 +197,6 @@ h1 {
     gap: 2rem;
 }
 
-/* --- GLASS CARDS --- */
 .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
@@ -240,7 +220,6 @@ h1 {
     gap: 10px;
 }
 
-/* --- TIMELINE --- */
 .timeline-item {
     border-left: 2px solid var(--primary);
     padding-left: 1.5rem;
@@ -251,10 +230,8 @@ h1 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -6px;
-    top: 0;
-    width: 10px;
-    height: 10px;
+    left: -6px; top: 0;
+    width: 10px; height: 10px;
     background: var(--primary);
     border-radius: 50%;
 }
@@ -266,15 +243,10 @@ h1 {
     text-transform: uppercase;
 }
 
-.timeline-item h4 {
-    font-size: 1.1rem;
-    margin: 0.3rem 0;
-}
+.timeline-item h4 { font-size: 1.1rem; margin: 0.3rem 0; }
+.timeline-item .place { color: var(--text-gray); font-size: 0.95rem; }
 
-.timeline-item .place {
-    color: var(--text-gray);
-    font-size: 0.95rem;
-}
+.center-text { text-align: center; }
 
 footer {
     text-align: center;
@@ -290,27 +262,25 @@ footer {
     gap: 1.5rem;
 }
 
-.social-links a {
-    color: var(--text-white);
-    text-decoration: none;
-}
+.social-links a { color: var(--text-white); text-decoration: none; transition: 0.3s; }
+.social-links a:hover { color: var(--primary); }
 
+/* --- RESPONSIVE (MÓVIL) --- */
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column-reverse;
         text-align: center;
         padding-top: 8rem;
     }
-
-    /*MOVILES*/
-
-    .nav-links { display: none; }
+    
+    .nav-links { display: none; } 
     
     h1 { font-size: 2.5rem; }
     
-    .hero-image .img-wrapper {
-        width: 250px;
-        height: 250px;
+    .hero-image .img-wrapper { 
+        width: 250px; 
+        height: 250px; 
+        margin: 0 auto; 
     }
     
     .hero-buttons { justify-content: center; }
